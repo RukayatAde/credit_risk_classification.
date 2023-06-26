@@ -1,6 +1,6 @@
 # credit_risk_classification.
 
-*Instructions*
+**Instructions** :
 The instructions for this Challenge are divided into the following subsections:
 
 Split the Data into Training and Testing Sets
@@ -16,7 +16,8 @@ Read the lending_data.csv data from the Resources folder into a Pandas DataFrame
 
 Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
 
-NOTE
+
+**NOTE**
 A value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting.
 
 Split the data into training and testing datasets by using train_test_split.
@@ -34,12 +35,22 @@ Generate a confusion matrix.
 
 print the classification report.
 
-Question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
 
-Answer:
-for Logistic Regression Model with the Original Data
+
+**Question** : How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
+
+**Answer** :
+**For Logistic Regression Model with the Original Data**
 
 The prediction for healthy loan is 100% as the precision is the same with the actual one. But there is slight difference between the predicted high risk loan and the actual, as the actual is 89% while the precision is 87%.
 
 The accuracy score is 99%.
 
+
+**For Logistic Regression Model with the resampled Data**
+
+The precision for the healthy loan is 1.00, this shows 100% accuracy of the predicted healthy loan
+
+And the precision for the high risk loan is 0.87, showing 87% accuracy of the predicted high risk loan
+
+The accuracy score is 100%, showing perfect prediction of this model.
